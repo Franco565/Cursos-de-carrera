@@ -1,0 +1,1072 @@
+<p style="color:white; background-color:gray;">
+    This is an example of inline styling. 
+</p>
+
+
+p {
+   color:white;
+   background-color:gray;
+   front-size:130%;
+}
+
+h1 { color: orange; }
+
+#intro {
+    color: white;
+    background-color: gray;
+}
+
+<div id="intro">
+   <p> This paragraph is in the intro section.</p>
+</div>
+<p> This paragraph is not in the intro section.</p>
+
+<div>
+   <p class="first">This is a paragraph</p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section</p>
+<p> The second paragraph is not in the intro section. </p>
+
+.first {font-size: 200%;}
+
+<div id="intro">
+   <p class="first">This is a <em> paragraph.</em></p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+
+#intro .first em {
+   color: pink;
+   background-color:gray;
+}
+
+p {
+  color: grteen;
+  /* this is a comment */
+  front-size: 150%;
+}
+
+<html>
+   <head>
+      <style>
+      body {
+         color: green;
+         font-family: Arial;
+      }
+     </style>
+
+<p class="serif">
+   This is a paragraph shown in serif font.
+
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+
+<p class="small">
+   Paragraph text set to be small
+</p>
+<p class="medium">
+   Paragraph text set to be medium
+</p>
+<p class="large">
+   Paragraph text set to be large
+</p>
+<p class="xlarge">
+   Paragraph text set to be very large
+</p>
+
+p.small {
+    font-size: small;
+}
+
+h1 { 
+   font-size: 20px;
+}
+
+<p class="normal">Paragraph font variant set to normal.</p>
+<p class="small">Paragraph font variant set to small-caps.</p>
+
+p.normal {
+  font-variant: normal;
+}
+
+<p class="example">The text inside the paragraph is green.</p>
+
+p.example {
+  color: green;
+}
+
+<p class="left">This paragraph is aligned to 
+<strong>left.</strong></p>
+
+p.left {
+   text-align: left;
+}
+
+<table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+  <tr>
+     <td class="top">Top</td>
+     <td class="middle">Middle</td>
+     <td class="bottom">Bottom</td>
+  </tr>
+</table>
+
+td.top {
+   vertical-align: top;
+}
+
+td.middle {
+   vertical-align: middle;
+}
+
+td.bottom {
+   vertical-align: bottom;
+}
+
+<p>This is an <span class="baseline">inline text</span> example.</p>
+<p>This is a <span class="sub">sub line text</span> example.</p>
+<p> This is a <span class="super">super line text</span> example.</p>
+<p> This is a <span class="pixel">pixel</span> example.</p>
+
+sapn.baseline { 
+     vertical-align: baseline;
+}
+
+<div class="main">
+   <div class="paragraph">
+   This text is aligned to the middle
+   </div>
+</div>
+
+.main {
+   height: 150px; width: 400px;
+   background-color: lightskyblue;
+   display: inline-table;
+}
+
+.paragraph {
+     display: table-cell;
+     Vertical-align: middle;
+}
+
+<p class="none">This is default style of the text (none).</p>
+<p class="inherit">This text inherits the decoration of the parent.</p>
+<p class="overline">This is overlined text.</p>
+<p class="underline">This is underlined text.</p>
+<p class="line-through">This is lined-through text.</p>
+
+p.inherit { 
+   text-decoration: inherit;
+}
+
+<p>This is an example of 
+<strong>text-indent </strong> property. 
+First line of our text is indented to the right in 60px. 
+Besides pixels you can also use other measurement units, 
+like pt, cm, em, etc. </p>
+
+p {
+   text-indent: 60px;
+}
+
+<h1>Text-shadow example</h1>
+
+h1 {
+   height: 150px; width: 400px;
+   background-color: lightskyblue;
+   display: inline-table;
+   text-shadow: 5px 2px 4px grey;
+}
+
+h1 {
+  front-size: 20pt;
+  text-shadow: rgba(0,0,255,1) -1px -2px 0.5em;
+
+
+<p class="capitalize">
+    The value capitalize transforms the first 
+    character in each word to uppercase; 
+    all other characters remain unaffected.
+</p>
+
+p.capitalize {
+   text-tranform: capitalize;
+}
+
+<p class="normal">This paragraph has no additional letter-spacing applied.</p>
+<p class="positive ">This paragraph is letter-spaced at 4px.</p>
+
+p.normal {
+   letter-spacing: normal;
+}
+p.positive { 
+   letter-spacing: 4px;
+}
+
+p.positive { 
+   letter-spacing: -4px;
+}
+
+<p class="normal">This paragraph has no additional word-spacing applied.</p>
+<p class="px">This paragraph is word-spaced at 30px.</p>
+
+p.normal {
+   word-spacing: normal;
+}
+p.px { 
+   word-spacing: 30px;
+}
+
+<p>
+This paragraph has         multiple spaces      and
+a line break, but it will be ignored, as we used the nowrap value. 
+</p>
+
+p { 
+   white-space: nowrap;
+}
+
+<p class="pre"> 
+In the markup we have multiple            spaces 
+and a line break. 
+</p>
+<p class="preline"> 
+In the markup we have multiple            spaces 
+and a line break, but in the result multiple spaces are ignored. 
+</p>
+<p class="prewrap"> 
+In the markup we have              multiple 
+spaces and a line break.
+</p>
+
+p.pre { 
+   white-space: pre;
+}
+
+
+<p>This is an example of a solid border.</p>
+
+p {
+   padding: 10px;
+   border: 5px solid green;
+}
+
+<p class="first">
+   Border color has been created using <strong>color name.</strong>
+</p>
+<p class="second">
+   Border color has been created using <strong>Hex values.</strong> 
+</p>
+<p class="third">
+   Border color has been created using <strong>RGB values.</strong> 
+</p>
+
+p.first {
+   padding: 10px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: blue;
+}
+
+<p class="none">This paragraph has no border.</p>
+<p class="dotted">This is a dotted border.</p>
+<p class="dashed">This is a dashed border.</p>
+<p class="double">This is a double border.</p>
+<p class="groove">This is a grooved border.</p>
+<p class="ridge">This is a ridged border.</p>
+<p class="inset">This is an inset border.</p>
+<p class="outset">This is an outset border.</p>
+<p class="hidden">This is a hidden border.</p>
+
+p.none {border-style: none;}
+
+<div> El ancho y alto total de este elemento es 100px. </div>
+
+div { 
+    border: 5px verde solido;
+    width: 90px;
+    height: 90px;
+}
+
+<p class = "first"> La <strong> altura mínima </strong> de este párrafo se establece en 100 px. </p>
+<p class = "second"> La <strong> anchura máxima </strong> de este el párrafo está configurado en 100 px. </p>
+
+p.first {
+   border: 5px solid green;
+   min-height: 100px;
+}
+
+p.second {
+   border: 5px solid green;
+   max-height: 100px;
+}
+
+
+<p>The background color of this page is set to LightSkyBlue.</p>
+<h1>This is a heading</h1>
+<p>This is a paragraph</p>
+
+body {
+     background-color: #87CEFA;
+}
+
+h1 {
+   background-color: #87CEFA;
+}
+
+<p>This paragraph has a background image.</p>
+
+p {
+    padding: 30px;
+    background-image: url("css_logo.png");
+    background-color: #e9e9e9;
+}
+
+body {
+    padding: 30px;
+    background-image: url("css_logo.png");
+    background-color: #e9e9e9;
+    background-repeat: repeat-x-y (inherit);
+    margin-top: 100px;
+    padding: 40px;
+}
+
+body {
+    background-image: url("css_logo.png");
+    background-repeat: repeat-x-y (inherit);
+    background-attachment: fixed;
+}
+
+body {
+    background-image: url("css_logo.png");
+    background-repeat: repeat-x-y (inherit);
+    background-attachment: scroll;
+}
+
+<ol class="lower-alpha">
+   <li>Red</li>
+   <li>Green</li>
+   <li>Blue</li>
+</ol>
+<ul class="circle">
+   <li>Red</li>
+   <li>Green</li>
+   <li>Blue</li>
+</ul>
+<ul class="square">
+   <li>Red</li>
+   <li>Green</li>
+   <li>Blue</li>
+</ul>
+
+ol.lower-alpha {
+   list-style-type: lower-alpha (circle, square);
+}
+
+<p>The following list has list-style-position: 
+<strong>inside</strong>.</p>
+<ul>
+   <li> Rojo </li>
+   <li> Verde </li>
+   <li> Azul < / li>
+</ul>
+
+ul { 
+   list-style-image: url("logo.jpg");
+   list-style-position: inside;
+}
+
+ul {
+   list-style: square outside none;
+}
+
+ul {
+   list-style-type: square;
+   list-style-position: outside;
+   list-style-image: none;
+}
+
+<table border="1">
+   <tr>
+     <td>Red</td>
+     <td>Green</td>
+   </tr>
+   <tr>
+      <td>Blue</td>
+      <td>Yellow</td>
+   </tr>
+</table>
+
+table {
+     border-collapse: separate;
+     border-spacing: 20px 40px;
+}
+
+
+<table border="1">
+<caption>Some of Our Courses</caption>
+<tr>
+  <th>Course name</th>
+  <th>Lessons</th>
+  <th>Quizzes</th>
+</tr>
+<tr>
+  <td>C++</td>
+  <td>81</td>
+  <td>363</td>
+</tr>
+<tr>
+  <td>JavaScript</td>
+  <td>48</td>
+  <td>144</td>
+</tr>
+<tr>
+  <td>HTML</td>
+  <td>38</td>
+  <td>119</td>
+</tr>
+<tr>
+  <td>CSS</td>
+  <td>70</td>
+  <td>174</td>
+</tr>
+</table>
+
+caption {
+    caption-side: top;
+}
+
+
+<table border="1">
+  <tr>
+    <td>HTML</td>
+    <td>CSS</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td></td>
+  </tr>
+</table>
+
+table { 
+   border-collapse: separate;
+   empty-cells: hide;
+}
+
+
+<p>Table-layout is set to <strong>auto</strong></p>
+<table class="auto">
+  <tr>
+    <td width=“10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>Table-layout is set to <strong>fixed</strong></p>
+<table class="fixed">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+table { 
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid gray;
+
+<p><a href="http://www.sololearn.com" target="_blank">
+   This link is hovered when we mouse over it
+</a></p>
+
+a:hover {
+     color: red;
+}
+
+<p><a href="http://www.sololearn.com" target="_blank">
+   This link has no underline.
+</a></p>
+
+a:link {
+     text-decoration: none;
+}
+
+<span> Primer párrafo. </span>
+<span> Segundo párrafo. </span>
+<span> Tercer párrafo. </span>
+<span> Cuarto párrafo. </span>
+<span> Quinto párrafo. </span>
+
+span { disb: lock ;}
+
+p {
+  display: inline;
+}
+
+<h1> Este texto no se mostrará, ya que establecemos el valor en ninguno. </h1> 
+<p> El título de este párrafo no se muestra, ya que establecemos el valor en ninguno. </p>
+
+h1 {
+   display: none ;
+}
+
+<h1>This is a heading</h1>
+<div class="hidden">
+   This text will not display in browser.
+</div>
+<p>
+   The space above this paragraph is empty because 
+   the visibility of the div element is set to hidden.
+</p>
+
+div.hidden {
+    visibility: hidden;
+}
+
+
+div.hidden {
+    display: none;
+}
+
+<p> Párrafo sin posición. </p>
+<p> Párrafo sin posición. </p>
+<p> Párrafo sin posición. </p>
+<p> Párrafo sin posición. </p>
+<p > Párrafo sin posición. </p>
+<p class = "position_static"> Este párrafo tiene una posición estática. </p>
+ 
+p.position_static {
+   positio:static;
+   top: 30px;
+   right 5px;
+   color: red;
+}
+
+p.position_fixed { 
+   position: fixed;
+   top: 30px;
+   right: 5px
+   color: red;
+}
+
+p {
+  width: 350px;
+  border: 1px black solid;
+  position: fixed;
+}
+
+span { 
+   background: green;
+   color:white;
+   position: relative;
+   top: 150px;
+   left: 50px;
+}
+
+<p><img src="css_logo.png" />
+This paragraph has an image that is floated to the <strong>right.</strong> 
+It is highly recommended to add a margin to images so that the text does 
+not get too close to the image. If you want your text to be easily read, you 
+should always add a few pixels between words and borders, images, 
+and other content. 
+</p>
+
+img { 
+   float: right;
+}
+
+img { 
+   float: left;
+   width: 120px;
+   marning: 10px;
+}
+p { 
+  width: 120px;
+  float: left;
+}
+
+This paragraph is above the div element 
+and is not affected by the float right property. 
+<br /><br />
+<div class="floating">
+   <img src="css_logo.png" />
+</div>
+This paragraph comes after the div element 
+and is affected by the float right property. 
+<br /><br />
+
+.floating {
+     float: right;
+}
+
+This paragraph is above the div element 
+and is not affected by the float right property. 
+<br/><br/>
+<div class="floating">
+   <img src="css_logo.png" />
+</div>
+This paragraph comes after the div element 
+and is affected by the float right property. 
+<br/><br class="clearing"/>
+This paragraph is out of the floating group 
+and is not affected by the float right property.
+<br/> <br/>
+
+.floating {
+     float: right;
+}
+
+.clearing {
+   clear: both;
+}
+
+<div>
+This text is inside the div element, which has a blue 
+background color and is floated to the left. We set a specific 
+height and width for the div element, and as you can see, 
+the content cannot fit. 
+</div>
+
+div {
+   width: 150px;
+   height: 150px;
+   background-color: lightblue;
+   float: left;
+}
+
+div {
+   width: 150px;
+   height: 150px;
+   background-color: lightblue;
+   float: left;
+   overflow: scroll;
+}
+
+
+-webkit-border-radius: 24px;
+
+border-radius: 20px;
+background-color: green;
+color: white;
+
+div {
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+   background-color: green;
+   color: white;
+}
+
+div {
+   width: 200px;
+   height: 200px;
+   background-color: green;
+   box-shadow: 10px 10px #888888;
+}
+
+box-shadow: 10px 10px 5px 5px #888888;
+box-shadow: -10px -10px 5px -5px #888888;
+box-shadow: inset 10px 5px 5px #888888;
+
+box-shadow:
+inset 10px 10px 5px #888888,
+inset -10px -10px 5px #888888;
+
+box-shadow: 0 0 10px 4px #FF6347,
+0 0 10px 30px #FFDAB9,
+30px 0 20px 30px #B0E0E6;
+
+
+<nav>
+   <ul>
+       <li><a href="#">COURSES</a></li>
+       <li><a href="#">DISCUSS</a></li>
+       <li><a href="#">TOP LEARNERS</a></li>
+       <li><a href="#">BLOG</a></li>
+   </ul>
+</nav>
+
+
+
+
+
+div {
+   width: 150px;
+   height: 150px;
+   background-color: lightblue;
+   float: left;
+   overflow: hidden;
+}
+
+.blue {
+   bacground-color: #8EC4D0;
+   marning-bottom: 15px;
+   width: 120px;
+   height: 15px;
+   color: #FFF;
+}
+.red {
+  background-color: #FF4D4D;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  color: #FFF;
+  margin-top: -50px
+  margin-left: 50px;
+}
+
+.blue {
+    z-index: 3;
+    position:relative;
+}
+
+.red { 
+   z-index: 2;
+   postion: relative;
+}
+
+<h1> Hola nuevo mundo <h1>
+
+h1 {
+    text-shadow: 5px 10px 2px #93968f,
+        -3px 6px 5px #58d1e3;}
+
+
+<div id="parent">
+   <p>First paragraph</p>
+   <p>Second paragraph</p>
+   <p>Third paragraph</p>
+   <p>Fourth paragraph</p>
+</div>
+
+#parent p:first-child { 
+     color: green;
+     text-decoration: underline;
+}
+
+::first-line {
+   color: #589432;
+}
+
+p::-moz-selection {
+   background: #8bc34a;
+   color: #fff;
+}
+
+<p>You can insert text, images, and other resources using <strong>:before </strong>pseudo element.</p>
+<p>You can insert text, images, and other resources using <strong>:before </strong>pseudo element.</p>
+<p>You can insert text, images, and other resources using <strong>:before </strong>pseudo element.</p>
+
+::before {
+  content: url("img.jpg");
+}
+
+p {
+   width: 210px;
+   height: 100px;
+   border: 1px solid #000000;
+   word-wrap: normal;
+}
+
+p {
+   width: 210px;
+   height: 100px;
+   border: 1px solid #000000;
+   word-wrap: break-word;
+}
+
+<h1>This is Our Headline</h1>
+
+@font-face {
+  font-family: Delicious; 
+  src: url('Delicious-Roman.otf'); 
+} 
+@font-face { 
+  font-family: Delicious; 
+  font-weight: bold; 
+  src: url('Delicious-Bold.otf'); 
+}
+h1{
+   font-family: Delicious, sans-serif; 
+}
+
+@font-face { 
+   font-family: Delicious; 
+   src: url('Delicious-Roman.ttf');
+   src: url('Delicious-Roman.eot?#iefix'); 
+}
+
+div {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 4px;
+    color: #FFF;
+    blackground:-moz-linear-gradient(DeepSkyBlue, Black);
+}
+
+background:-moz-linear-gradient(blue, yellow, green, pink, white);
+
+div {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 4px;
+    background:-moz-linear-gradient(blue 20%, yellow 30%, 
+green 85%);
+}
+
+div.first {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 4px;
+    color: #FFF;
+    background:-moz-linear-gradient(bottom left, blue, yellow, green, 
+pink, white);
+}
+
+div.first {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 4px;
+    background:-moz-linear-gradient(100deg, blue, yellow, green, 
+pink, white);
+}
+
+background:-moz-repeating-linear-gradient(blue, green 20px);
+
+background: radial-gradient(position, shape or size, color-stops);
+
+div.first {
+    float: left;
+    width: 300px;
+    height: 100px;
+    color: #FFF;
+    background:-moz-radial-gradient(blue, yellow, green, 
+pink, white);
+}
+
+div.first {
+    color: #FFF;
+    width: 300px;
+    height: 100px;
+    background:-moz-linear-gradient(circle, blue, yellow, green, 
+pink, white);
+}
+
+div.first {
+    color: #FFF;
+    width: 300px;
+    height: 100px;
+    background:-moz-linear-gradient(top left, blue, yellow, green, 
+pink, white);
+}
+
+div.second {
+     color: #FFF;
+    width: 300px;
+    height: 100px;
+    background:-moz-linear-gradient(blue 20%, yellow 30%, 
+green 85%);
+}
+
+background:-moz-linear-gradient(circle, blue 20%, yellow 30%, 
+green 85%);
+
+div {
+   height: 150px;
+   width: 200px;
+   border: 1px solid #000;
+   background: url("css_logo.png") no repeat 50% 50%;
+   background-size: 100px 100px;
+   background-size: contain;
+   background-size: cover;
+} 
+
+#first { 
+     border: 2px dotted black;
+     padding: 20px;
+     background: lightblue;
+     background-clip: padding-box;
+}
+
+#second { 
+     border: 2px dotted black;
+     padding: 20px;
+     background: lightblue;
+     background-clip: content-box;
+}
+
+div { 
+    background-image: url("css-logo.png");
+    background-clip: content-box;
+    border: 20px solid rgba(0, 0, 0, 0.3) 
+}
+
+border: 20px solid rgba(0, 0, 0, 0.3) 
+-moz-background-clip: padding-box;
+background-clip: padding-box;
+
+
+div {
+   height: 150px;
+   width: 200px;
+    background-image: url("css-logo.png"), url("css-logo.png");
+   background-position: right bottom, left top;
+   background-repeat: no-repeat;
+}
+
+background-image: url("css-logo.png")right top no-repeat, url("css-logo.png") left top no-repeat;
+
+#img1 { 
+     opacity: 1;
+     filter: alpha (opacity=50);
+}
+
+#img2 { 
+     opacity: 0.5;
+}
+
+#img3 { 
+     opacity: 0.25;
+}
+
+
+transition: transform 5s ease-in;
+
+div {
+   height: 150px;
+   width: 200px;
+   background: #32cd32;
+   transition: width 3s;
+}
+
+div:hover {
+     width: 250px;
+}
+
+transition-timing-function: cubic-bezier(0,0,1,1);
+
+div {
+   height: 150px;
+   width: 200px;
+   margin-top: 30px;
+   background-color: #32cd32;
+   transform: rotate(10deg);
+    transform-origin: 25% 75%;
+}
+
+div {
+   padding: 50px;
+   position: absolute;
+   background-color: #32DC32;
+   transform: translate(100px, 50px);
+}
+transform: skew(30deg);
+transform: scale(0.7, 0.7);
+transform: rotate(10deg) translate(100px);
+
+@keyframes example {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+}
+
+@keyframes colorchange {
+   from {background-color: red;}
+   to {background-color: green;}
+}
+
+div {
+   height: 150px;
+   width: 200px;
+   margin-top: 30px;
+   background-color: #32cd32;
+   animation-name: colorchange;
+   animation-duration: 1s;
+}
+
+@keyframes colorchange {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+}
+
+animation-iteration-count: 5;
+animation-iteration-count: infinite;
+
+div {
+animation-name: colorchange;
+animation-duration: 3s;
+animation-timing-function: ease-in;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+}
+
+div { 
+   animation: colorchange 3s ease-in 1s infinite
+  reverse;
+}
+
+div.X {
+   transform: rotateX(150deg);
+}
+
+div.Y {
+   transform: rotateY(150deg);
+}
+
+div.Z {
+   transform: rotateZ(150deg);
+}
+
+#mybox1 {
+    transform: translateX(29px)
+    translateY(5em)
+    translateZ(-13px);
+}
+
+#mybox1 {
+    transform: translate3d(29px, 4em, 10px);
+}
+
+div.empty-div {
+     perspective: 100px;
+}
+
+div.green-div { 
+     transform: rotateX(45deg);
+}
+
+.dropshadow {
+   filter: drop-shadow(5px 9px 2px blue);
+}
+
+.filtered { 
+   filter: grayscale(100%)
+}
+
+.filtered { 
+   filter: sepia(100%)
+}
+
+saturate (2.0)
+hue-rotate(180deg)
+invert(70%)
+opacity(70%)
+brightness(50%)(2.0)
+contrast(140%)
+
+.blured { 
+   filter: blur(100%)
+}
+
+
+

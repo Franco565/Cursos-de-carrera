@@ -1,0 +1,477 @@
+
+SANTAIGO FRANCO PIEDRAHITA
+
+<html>
+ <head>
+  <litle>My first PHP page</litle>
+</head>
+<body>
+<?php
+   echo "Hello world!";
+?>
+<script lenguage="php">
+  echo "Hello world!";
+</script>
+?
+  echo "Hello World!";
+?>
+<?php
+  echo "<strong>This is a bold text.</strong>";
+?>
+// this is a comment
+  echo "<p>I am learnig PHP!</p>
+?>
+
+/* This is a multiline comment block 
+that spans over
+multiple lines
+*/
+<?php
+$name = 'jhon';
+$age = 25;
+echo $name;
+
+define("MSG", "Hi Sololearners!");
+echo MSG;
+
+define("MSG", "Hi Sololearners!", true);
+echo MSG;
+// Outputs "Hi SoloLearners
+// Outputs 'jhon'
+?>
+
+<?php
+  $string1 = "Hello world!"; //double quotes
+  $string2 = 'Hello world!';  //single quotes
+?>
+
+<?php
+ $int1 ​= 42; // positive number
+ ​$int2 ​= -42; // negative numbe
+?>
+<?php
+  $x = 42.168;
+?>
+
+<?php
+  $x = true; $y = false;
+?>
+
+<?php 
+$str = "10";
+$int = 20;
+$sum = $str + $int;
+echo ($sum);
+
+// Outputs 30
+?>
+
+<?php
+$name = 'David';
+function getName() {
+global $ name;
+echo $name;
+}
+getname();
+//Outputs 'David'
+?>
+
+<?php
+$a = 'hello';
+$hello = "Hi!";
+echo $$a
+
+// Outputs 'Hi!'
+?>
+
+<?php
+$num1 = 8;
+$num2 = 6;
+
+//Addition
+echo $num1 + $num2; //14
+
+//Subtraction
+echo $num1 - $num2; //2
+
+//Multiplication
+echo $num1 * $num2; //48
+
+//Division 
+echo $num1 / $num2; //1.33
+
+//Modulus
+$x = 14;
+$y = 3;
+echo $x % $y; //2
+?>
+
+$x++; // equivalent to $x = $x+1;
+$x--; // equivalent to $x = $x-1; 
+
+$x++; // post-increment 
+$x--; // post-decrement 
+++$x; // pre-increment 
+--$x; // pre-decrement
+
+$a  = 2; $b = $a++; // $a=3,  $b=2
+$a  = 2; $b = ++$a; // $a=3,  $b=3G
+
+$num1 = 5;
+$num2 = $num1;
+
+<?php
+$x = 50;
+$x += 100;
+echo $x;
+
+// Outputs: 150
+?>
+
+$names = array("David", "Amy", "John");
+
+$names[0] = "David";
+$names[1] = "Amy";
+$names[2] = "John";
+
+$names = array("David", "Amy", "John");
+
+echo $names[1]; // Outputs "Amy"
+
+$people = array("David"=>"27", "Amy"=>"21", "John"=>"42");
+// or
+$people['David'] = "27";
+$people['Amy'] = "21";
+$people['John'] = "42";
+
+$people = array(
+   'online'=>array('David', 'Amy'),
+   'offline'=>array('John', 'Rob', 'Jack'),
+   'away'=>array('Arthur', 'Daniel')
+);
+
+echo $people['online'][0]; //Outputs "David"
+echo $people['away'][1]; //Outputs "Daniel"
+
+if (condition) {
+   code to be executed if condition is true;
+} else {
+   code to be executed if condition is false;
+}
+
+$x = 10;
+$y = 20;
+if $x >= $y) {
+  echo $x;
+} else {
+   echo $y;
+}
+
+// Outputs "20"
+
+if (condition) {
+  code to be executed if condition is true;
+} elseif (condition) {
+  code to be executed if condition is true;
+} else {
+   code to be executed if condition is false;
+}
+
+$age = 21;
+
+if ($age<= 13) {
+echo "child."
+} elseif ($age>13 && $age<19) {
+  echo "Teenager";
+} else {
+  echo "Adult";
+}
+
+//Outputs "Adult"
+
+while (condition is true) {
+   code to be executed;
+}
+
+$i = 1;
+while ($i < 7) { 
+echo "The value is $i <br />";
+$i++;
+}
+
+do {
+  code to be executed;
+} while (condition is true);
+
+$i = 5;
+do { 
+   echo "The number is " . $i . "<br/>";
+   $i++;
+} while($i <= 7);
+
+//Output
+//The number is 5
+//The number is 6
+//The number is 7
+
+for (init; test; increment) {
+   code to be executed;
+}
+
+for ($a = 0; $a < 6; $a++) {
+   echo "Value of a : ". $a . "<br />";
+}
+
+oreach (array as $value) {
+  code to be executed;
+}
+//or
+foreach (array as $key => $value) {
+   code to be executed;
+}
+
+$names = array("John", "David", "Amy");
+foreach ($names as $name) {
+echo $name. '<br />';
+}
+
+switch (n) {
+  case value1:
+    //code to be executed if n=value1
+    break;
+  case value2:
+     //code to be executed if n=value2
+     break;
+  ...
+  default:
+    // code to be executed if n is different from all labels
+}
+
+$today = 'Tue';
+
+switch ($today) { 
+case "Mon":
+echo "Today is Monday.";
+break;
+case "Tue":
+echo "Today is Tuesday.";
+break;
+case "Wed":
+echo "Today is Wednesday.";
+break;
+case "Thu":
+echo "Today is Thursday.";
+break;
+case "Fri":
+echo "Today is friday.";
+break;
+case "Sat":
+echo "Today is Saturday.";
+break;
+case "Sun":
+echo "Today is Sunday.";
+break;
+default:
+echo "invalid day.";
+}
+
+//Outputs "Today is Tuesday."
+
+<?php
+  echo '<h1>Welcome</h1>';
+?>
+
+<html>
+  <body>
+
+  <?php include 'header.php'; ?>
+
+  <p>Some text.</p>
+  <p>Some text.</p>
+  
+//Include for html
+<html>
+  <body>
+
+  <?php include 'header.php'; ?>
+
+  <p>This is a paragraph</p>
+  </body>
+</html>
+
+function functionName() {    
+   //code to be executed
+}
+
+function sayHello() {
+echo "Hello!";
+}
+
+sayHello(); //call the function
+
+//Outputs "Hello!"
+
+function multiplyByTwo($number) {
+$answer = $number * 2;
+echo $answer;
+}
+multiplyByTwo(3);
+//Outputs 6
+
+function multiply($num1, $num2) {
+echo $num1 * num2;
+}
+multiply (3, 6)
+//Outputs 18
+
+function setCounter($num=10) {
+echo "Counter is ".$num;
+}
+setCounter(42);  //Counter is 42
+setCounter(); //Counter is 10
+
+function mult($num1, $num2) { 
+$res = $num1 * $num2;
+return $res;
+}
+
+echo mult(8, 3);
+//Outputs 24
+
+<?php
+echo $_SERVER['SCRIPT_NAME'] 
+//Outputs "/somefile.php"
+?>
+
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$image_path = $host.'/images/';
+?>
+
+<?php
+require 'config.php';
+echo '<img src="'.$image_path.'header.png" />';
+?>
+
+</body>
+</html>
+
+//For HTML
+
+<form action="first.php" method="post">
+  <p>Name: <input type="text" name="name" /></p>
+  <p>Age: <input type="text" name="age" /></p>
+  <p><input type="submit" name="submit" value="Submit" /></p>
+</form>
+
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br />
+Your age: <?php echo $_POST["age"]; ?>
+
+<?php
+echo "Hi ".$_GET['name'].". ";
+echo "You are ".$_GET['age']." years old.";
+?>
+
+</body>
+</html>
+
+//start a PHP Session
+
+<?php
+// Start the session
+session_start();
+
+$_SESSION['color'] = "red";
+$_SESSION['name'] = "John";
+?>
+
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+echo "Your name is " . $_SESSION['name'];
+// Outputs "Your name is John"
+?>
+</body>
+</html>
+
+setcookie(name, value, expire, path, domain, secure, httponly);
+
+<?php
+$value = "John";
+setcookie("user", $value, time() + (86400 * 30), '/'); 
+
+if(isset($_COOKIE['user'])) {
+  echo "Value is: ". $_COOKIE['user'];
+}
+//Outputs "Value is: John"
+?>
+
+$myfile = fopen("file.txt", "w");
+
+<?php
+$myfile = fopen("names.txt", "w");
+
+$txt = "John\n";
+fwrite($myfile, $txt);
+$txt = "David\n";
+fwrite($myfile, $txt);
+
+fclose($myfile);
+
+/* File contains:
+John
+David
+*/
+?>
+
+$myFile = "test.txt";
+$fh = fopen($myFile, 'a');
+fwrite($fh, "Some text");
+fclose($fh);
+
+<?php
+if(isset($_POST['text'])) {
+  $name = $_POST['text'];
+  $handle = fopen('names.txt', 'a');
+  fwrite($handle, $name."\n");
+  fclose($handle); 
+}
+?>
+<form method="post">
+  Name: <input type="text" name="text" /> 
+  <input type="submit" name="submit" />
+</form>
+
+$read = file('names.txt');
+foreach ($read as $line) {
+echo $line .", ";
+}
+
+class Person {
+  public $age; //property
+  public function speak() { //method
+    echo "Hi!"
+  }
+}
+
+$bob = new Person();
+echo $bob->age;
+
+class person {
+    public $age;
+    function speak() {
+    echo "Hi!";
+   }
+}
+$p1 = new person(); //instantiate an object
+$p1->age = 23; // assignment
+echo $p1->age; // 23
+$p1->speak();//Hi!
